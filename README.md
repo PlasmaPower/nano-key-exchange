@@ -10,3 +10,11 @@ Contains one function, `nano_get_shared_key`, which takes 3 arguments:
 
 It returns a uint8_t which is currently either 0, indicating success, or 1,
 indicating a bad public key. On failure, the output buffer isn't modified.
+
+```c
+uint8_t nano_get_shared_key(
+    const uint8_t * secret_key,
+    const uint8_t * other_public_key,
+    uint8_t * shared_key_out
+);
+```
