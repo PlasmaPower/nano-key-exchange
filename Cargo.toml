@@ -1,0 +1,13 @@
+[package]
+name = "nano-key-exchange"
+version = "0.1.0"
+authors = ["Lee Bousfield <ljbousfield@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+curve25519-dalek = "2.0.0"
+blake2 = "0.8.1"
+
+[lib]
+name = "nano_key_exchange"
+crate-type = ["staticlib", "cdylib"]
